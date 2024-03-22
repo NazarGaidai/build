@@ -1828,6 +1828,8 @@ ol {
 .shoping__cart__table table tbody tr td.shoping__cart__item img {
   display: inline-block;
   margin-right: 25px;
+  width: 100px;
+  height: 100px;
 }
 
 .shoping__cart__table table tbody tr td.shoping__cart__item h5 {
