@@ -1466,7 +1466,7 @@ ol {
 }
 
 .product__item__pic {
-  height: 270px;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -1541,6 +1541,7 @@ ol {
 .product__item__text h5 {
   color: #252525;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .product__pagination, .blog__pagination {
