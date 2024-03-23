@@ -473,12 +473,12 @@ ol {
 }
 
 .header__cart ul li a span {
-  height: 13px;
-  width: 13px;
+  height: 18px;
+  width: 18px;
   background: #833030;
   font-size: 10px;
   color: #ffffff;
-  line-height: 13px;
+  line-height: 18px;
   text-align: center;
   font-weight: 700;
   display: inline-block;
@@ -1546,6 +1546,8 @@ ol {
 
 .product__pagination, .blog__pagination {
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .product__pagination a, .blog__pagination a {
