@@ -373,7 +373,10 @@ ol {
 }
 
 .header__menu {
-  padding: 24px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
 }
 
 .header__menu ul li {
@@ -432,7 +435,7 @@ ol {
 }
 
 .header__menu ul li a {
-  font-size: 14px;
+  font-size: 16px;
   color: #252525;
   text-transform: uppercase;
   font-weight: 700;
