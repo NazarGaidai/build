@@ -20,6 +20,8 @@ body {
   .pagination {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
   
   .pagination button {
