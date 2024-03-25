@@ -1,76 +1,115 @@
-<link rel="stylesheet" href="css/authMenu.css" type="text/css">
-<div class="overlay">
-    <!-- LOGN IN FORM by Omar Dsoky -->
-    <form>
-       <!--   con = Container  for items in the form-->
-       <div class="con">
-       <!--     Start  header Content  -->
-       <header class="head-form">
-          <h2>Увійти</h2>
-          <!--     A welcome message or an explanation of the login form -->
-          <p>Увійдіть тут, використовуючи своє ім’я користувача та пароль</p>
-       </header>
-       <!--     End  header Content  -->
-       <br>
-       <div class="field-set">
-         
-          <!--   user name -->
-             <span class="input-item">
-               <i class="fa fa-user-circle"></i>
-             </span>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/authMenu-2.css" type="text/css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <video autoplay muted loop class="video-bg">
+      <source src="img/materik1.mp4" type="video/mp4" />
+      Ваш браузер не підтримує відео тег.
+    </video>
+    <div class="overlay">
+      <!-- LOGN IN FORM by Omar Dsoky -->
+      <form>
+        <!--   con = Container  for items in the form-->
+        <div class="con">
+          <!--     Start  header Content  -->
+          <header class="head-form">
+            <h2>Увійти</h2>
+            <!--     A welcome message or an explanation of the login form -->
+            <p>Увійдіть тут, використовуючи своє ім’я користувача та пароль</p>
+          </header>
+          <!--     End  header Content  -->
+          <br />
+          <div class="field-set">
+            <!--   user name -->
+            <span class="input-item">
+              <i class="fa fa-user-circle"></i>
+            </span>
             <!--   user name Input-->
-             <input class="form-input" id="txt-input" type="text" placeholder="Ім'я користувача" required>
-         
-          <br>
-         
-               <!--   Password -->
-         
-          <span class="input-item">
-            <i class="fa fa-key"></i>
-           </span>
-          <!--   Password Input-->
-          <input class="form-input" type="password" placeholder="Пароль" id="pwd"  name="password" required>
-         
-    <!--      Show/hide password  -->
-         <span>
-            <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-         </span>
-         
-         
-          <br>
-    <!--        buttons -->
-    <!--      button LogIn -->
-          <button class="log-in"> Увійти </button>
-       </div>
-      
-    <!--   other buttons -->
-       <div class="other">
-    <!--      Forgot Password button-->
-          <button class="btn submits frgt-pass">Забули пароль?</button>
-    <!--     Sign Up button -->
-    <button class="btn submits sign-up" onclick="window.location.href='registration.html';">Зареєструватися 
-      <!--         Sign Up font icon -->
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-  </button>
-    <!--      End Other the Division -->
-       </div>
-         
-    <!--   End Conrainer  -->
-      </div>
-      
-      <!-- End Form -->
-    </form>
+            <input
+              class="form-input"
+              id="txt-input"
+              type="text"
+              placeholder="Ім'я користувача"
+              required
+            />
+
+            <br />
+
+            <!--   Password -->
+
+            <span class="input-item">
+              <i class="fa fa-key"></i>
+            </span>
+            <!--   Password Input-->
+            <input
+              class="form-input"
+              type="password"
+              placeholder="Пароль"
+              id="pwd"
+              name="password"
+              required
+            />
+
+            <!--      Show/hide password  -->
+            <span>
+              <i
+                class="fa fa-eye"
+                aria-hidden="true"
+                type="button"
+                id="eye"
+              ></i>
+            </span>
+
+            <br />
+            <!--        buttons -->
+            <!--      button LogIn -->
+            <button class="log-in">Увійти</button>
+          </div>
+
+          <!--   other buttons -->
+          <div class="other">
+            <!--      Forgot Password button-->
+            <button class="btn submits frgt-pass">Забули пароль?</button>
+            <!--     Sign Up button -->
+            <button
+              class="btn submits sign-up"
+              onclick="window.location.href='registration.html';"
+            >
+              Зареєструватися
+              <!--         Sign Up font icon -->
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </button>
+            <!--      End Other the Division -->
+          </div>
+
+          <!--   End Conrainer  -->
+        </div>
+
+        <!-- End Form -->
+      </form>
     </div>
-    <script src="https://kit.fontawesome.com/249bc3f9e8.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/249bc3f9e8.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
-      document.querySelector("form").addEventListener("submit", function(event) {
-          event.preventDefault(); // Предотвращаем стандартную отправку формы
-      
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Предотвращаем стандартную отправку форм щаем стандартную отправку формы.
+
           // Здесь должен быть ваш код для отправки данных формы на сервер
           // Например, используя fetch API или XMLHttpRequest
-      
+
           // Предположим, что аутентификация прошла успешно, перенаправляем на profile.html
-          window.location.href = 'profile.html';
-      });
-      </script>
+          window.location.href = "profile.html";
+        });
+    </script>
+  </body>
+</html>
