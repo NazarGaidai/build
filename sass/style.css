@@ -272,7 +272,7 @@ ol {
 }
 
 .header__top__right__social a {
-  font-size: 14px;
+  font-size: 30px;
   display: inline-block;
   color: #1c1c1c;
   margin-right: 20px;
@@ -357,6 +357,21 @@ ol {
   display: block;
   font-size: 14px;
   color: #1c1c1c;
+}
+
+.header__top__right__auth a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333; /* Измените цвет текста по вашему вкусу */
+  font-size: 16px; /* Размер текста */
+  margin: 0 10px; /* Отступы между элементами */
+}
+
+.header__top__right__auth i {
+  margin-right: 8px; /* Отступ иконки от текста */
+  font-size: 20px; /* Размер иконки */
 }
 
 .header__top__right__auth a i {

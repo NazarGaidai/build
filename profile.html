@@ -34,8 +34,10 @@
               </div>
 
               <div class="header__top__right__auth">
-                <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
-              </div>
+                <!-- Вставьте этот код внутрь <div class="header__top__right__auth"> в profile.html -->
+        <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
+        <a href="registration.html"><i class="fa fa-user-plus"></i> Реєстрація</a>
+            </div>
             </div>
           </div>
         </div>
@@ -262,6 +264,17 @@
       modal.find('.modal-body input').val(recipient);
     });
   </script>
+   
+<script>
+    $('#changePasswordModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Кнопка, которая вызвала модальное окно
+      var recipient = button.data('whatever'); // Извлечение информации из атрибутов data-
+      var modal = $(this);
+      modal.find('.modal-title').text('Новое сообщение к ' + recipient);
+      modal.find('.modal-body input').val(recipient);
+    });
+  </script>
+
 </body>
 
 </html>

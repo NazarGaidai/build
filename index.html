@@ -46,7 +46,9 @@
         </div>
         <div class="hamburger__menu__widget">
             <div class="header__top__right__auth">
-                <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
+                <!-- Вставьте этот код внутрь <div class="header__top__right__auth"> в profile.html -->
+        <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
+        <a href="registration.html"><i class="fa fa-user-plus"></i> Реєстрація</a>
             </div>
         </div>
         <nav class="hamburger__menu__nav mobile-menu">
@@ -95,7 +97,9 @@
                             </div>
                             
                             <div class="header__top__right__auth">
-                                <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
+                                <!-- Вставьте этот код внутрь <div class="header__top__right__auth"> в profile.html -->
+                        <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
+                        <a href="registration.html"><i class="fa fa-user-plus"></i> Реєстрація</a>
                             </div>
                         </div>
                     </div>
@@ -784,6 +788,16 @@
     <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
 </div>
 <script src="js/buttonUp.js"></script>
+
+<script>
+    $('#changePasswordModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Кнопка, которая вызвала модальное окно
+      var recipient = button.data('whatever'); // Извлечение информации из атрибутов data-
+      var modal = $(this);
+      modal.find('.modal-title').text('Новое сообщение к ' + recipient);
+      modal.find('.modal-body input').val(recipient);
+    });
+  </script>
 
 </body>
 

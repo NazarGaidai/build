@@ -48,10 +48,10 @@
     <!--      Forgot Password button-->
           <button class="btn submits frgt-pass">Забули пароль?</button>
     <!--     Sign Up button -->
-          <button class="btn submits sign-up">Зареєструватися 
-    <!--         Sign Up font icon -->
-          <i class="fa fa-user-plus" aria-hidden="true"></i>
-          </button>
+    <button class="btn submits sign-up" onclick="window.location.href='registration.html';">Зареєструватися 
+      <!--         Sign Up font icon -->
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+  </button>
     <!--      End Other the Division -->
        </div>
          
@@ -62,3 +62,15 @@
     </form>
     </div>
     <script src="https://kit.fontawesome.com/249bc3f9e8.js" crossorigin="anonymous"></script>
+    
+    <script>
+      document.querySelector("form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Предотвращаем стандартную отправку формы
+      
+          // Здесь должен быть ваш код для отправки данных формы на сервер
+          // Например, используя fetch API или XMLHttpRequest
+      
+          // Предположим, что аутентификация прошла успешно, перенаправляем на profile.html
+          window.location.href = 'profile.html';
+      });
+      </script>
