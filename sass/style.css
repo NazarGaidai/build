@@ -2307,6 +2307,42 @@ a[href^="tel:"]:hover {
   text-decoration: underline; /* Добавляем подчеркивание при наведении */
 }
 
+/* profile */
+.profile__menu {
+  background: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile__menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile__menu ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile__menu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile__menu ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.profile__menu ul li.active a,
+.profile__menu ul li a:hover {
+  color: #833030;
+}
+
+.profile__content h4 {
+  margin-bottom: 20px;
+}
+
+
 /* Blog Sidebar */
 .blog__sidebar {
   padding-top: 50px;
