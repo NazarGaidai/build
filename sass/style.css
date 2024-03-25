@@ -79,21 +79,17 @@ ol {
 }
 
 .section-title h2 {
-  color: #1c1c1c;
+  color: #833030;
   font-weight: 700;
   position: relative;
+  font-size: 46px;
 }
 
 .section-title h2:after {
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  right: 0;
-  height: 4px;
-  width: 80px;
-  background: #833030;
-  content: "";
-  margin: 0 auto;
+  
+  
+    border-bottom: 4px solid #833030; /* Параметры линии */
+   
 }
 
 .set-bg {
