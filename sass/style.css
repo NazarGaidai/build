@@ -1216,6 +1216,7 @@ ol {
 
 .product__discount {
   padding-bottom: 50px;
+  max-width: 100%;
 }
 
 .product__discount__title {
@@ -3468,3 +3469,32 @@ a[href^="tel:"]:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+#sort-low, #sort-hi {
+  background-color: #833030; /* Колір фону */
+  color: white; /* Колір тексту */
+  border: none; /* Відсутність рамки */
+  padding: 10px 20px; /* Внутрішні відступи */
+  margin: 5px; /* Зовнішні відступи */
+  cursor: pointer; /* Вказівник курсору */
+  border-radius: 5px; /* Закруглення кутів */
+  font-weight: bold; /* Жирність шрифту */
+  transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+}
+
+
+
+#sort-low:active, #sort-hi:active {
+  transform: scale(0.95); /* Зменшення розміру при натисканні */
+  background-color: #6d1b1b; /* Зміна кольору фону при натисканні */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Анімація зміни */
+}
+
+#sort-low:active, #sort-hi:active {
+  background-color: #ff0400; /* Зміна кольору фону при натисканні на червоний */
+}
+
+#sort-low:focus, #sort-hi:focus {
+  background-color: #ff0400; /* Постійна зміна кольору фону на червоний після натискання */
+}
