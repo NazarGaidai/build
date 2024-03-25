@@ -1,313 +1,267 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Личный кабинет</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="sass/style.css" type="text/css" />
-  </head>
-    <body>
-     <header class="header">
-      <!-- Вставьте здесь код шапки из index.html -->
-      <div class="header__top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <!-- Left side of header -->
-              <div class="header__top__left">
-                <ul>
-                  <li><i class="fa fa-envelope"></i> exemple@gmail.com</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <!-- Right side of header -->
-              <div class="header__top__right">
-                <div class="header__top__right__social">
-                  <a href="https://www.facebook.com/dcmaterik"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                  <a href="https://www.instagram.com/dcmaterik/"
-                    ><i class="fa fa-instagram"></i
-                  ></a>
-                  <a
-                    href="https://www.youtube.com/channel/UCwuhqp6Ze7uydK2QcJjQ9hQ"
-                    ><i class="fa fa-youtube"></i
-                  ></a>
-                </div>
 
-                <div class="header__top__right__auth">
-                  <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="sass/style.css" type="text/css" />
+</head>
+
+<body>
+  <header class="header">
+    <!-- Вставьте здесь код шапки из index.html -->
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <!-- Left side of header -->
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa fa-envelope"></i> exemple@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <!-- Right side of header -->
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="https://www.facebook.com/dcmaterik"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dcmaterik/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCwuhqp6Ze7uydK2QcJjQ9hQ"><i class="fa fa-youtube"></i></a>
+              </div>
+
+              <div class="header__top__right__auth">
+                <a href="auth.html"><i class="fa fa-user"></i> Логін</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Navigation -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="header__logo">
+    </div>
+    <!-- Navigation -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li class="active"><a href="./index.html">Головна </a></li>
+              <li><a href="./shop.html">Магазин</a></li>
+              <li><a href="./contact.html"> Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li>
+                <a href="#"><i class="shopping-bag"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>Личный кабинет</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Основное содержимое -->
+  <section class="profile spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- Боковое меню -->
+          <div class="profile__menu">
+            <ul>
+              <li class="active"><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личные данные</a></li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#changePasswordModal">Изменить пароль</a>
+              </li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <!-- Содержимое профиля -->
+          <div class="profile__content">
+            <div class="profile-info">
+              <h3>Личные данные</h3>
+              <p>Имя: Иван Иванов</p>
+              <p>Email: ivan@example.com</p>
+              <p>Телефон: +7 900 123 45 67</p>
+            </div>
+            <h4>Мои заказы</h4>
+            <!-- Список заказов пользователя -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно для изменения пароля -->
+  <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog"
+    aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="changePasswordModalLabel">
+            Изменение пароля
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="current-password">Текущий пароль</label>
+              <input type="password" class="form-control" id="current-password" required />
+            </div>
+            <div class="form-group">
+              <label for="new-password">Новый пароль</label>
+              <input type="password" class="form-control" id="new-password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Подтвердите новый пароль</label>
+              <input type="password" class="form-control" id="confirm-password" required />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Закрыть
+          </button>
+          <button type="button" class="btn btn-primary">
+            Сохранить изменения
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <footer class="footer spad">
+    <!-- Вставьте здесь код подвала из index.html -->
+    <div class="container">
+      <div class="row">
+        <!-- Logo & About -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
               <a href="./index.html"><img src="img/logo.png" alt="" /></a>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <nav class="header__menu">
-              <ul>
-                <li class="active"><a href="./index.html">Головна </a></li>
-                <li><a href="./shop.html">Магазин</a></li>
-                <li><a href="./contact.html"> Контакти</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-3">
-            <div class="header__cart">
-              <ul>
-                <li>
-                  <a href="#"><i class="shopping-bag"></i> </a>
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>Адреса: 1317 Example Place 28204 NC</li>
+              <li>Телефон: 704-768-7449</li>
+              <li>Email: example@gmail.com</li>
+            </ul>
           </div>
         </div>
-        <div class="hamburger__open">
-          <i class="fa fa-bars"></i>
-        </div>
-      </div>
-     </header>
 
-     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="breadcrumb__text">
-              <h2>Личный кабинет</h2>
-              <div class="line"></div>
-            </div>
+        <!-- Useful links -->
+        <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Корисні посилання</h6>
+            <ul>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Про наш магазин</a></li>
+              <li><a href="#">Безпечні покупки</a></li>
+              <li><a href="#">Інформація про доставку</a></li>
+              <li><a href="#">Політика конфіденційності</a></li>
+              <li><a href="#">Наша мапа сайту</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Хто ми</a></li>
+              <li><a href="#">Наші Послуги</a></li>
+              <li><a href="#">Проекти</a></li>
+              <li><a href="#">Контакти</a></li>
+              <li><a href="#">Інновації</a></li>
+              <li><a href="#">Відгуки</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-     </section>
 
-     <!-- Основное содержимое -->
-     <section class="profile spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <!-- Боковое меню -->
-            <div class="profile__menu">
-              <ul>
-                <li class="active"><a href="#">Мои заказы</a></li>
-                <li><a href="#">Личные данные</a></li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#changePasswordModal"
-                    >Изменить пароль</a
-                  >
-                </li>
-                <li><a href="#">Выйти</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <!-- Содержимое профиля -->
-            <div class="profile__content">
-              <div class="profile-info">
-                <h3>Личные данные</h3>
-                <p>Имя: Иван Иванов</p>
-                <p>Email: ivan@example.com</p>
-                <p>Телефон: +7 900 123 45 67</p>
-              </div>
-              <h4>Мои заказы</h4>
-              <!-- Список заказов пользователя -->
-            </div>
-          </div>
-        </div>
-      </div>
-     </section>
-
-     <!-- Модальное окно для изменения пароля -->
-     <div
-      class="modal fade"
-      id="changePasswordModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="changePasswordModalLabel"
-      aria-hidden="true"
-     >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="changePasswordModalLabel">
-              Изменение пароля
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="current-password">Текущий пароль</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="current-password"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="new-password">Новый пароль</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="new-password"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="confirm-password">Подтвердите новый пароль</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="confirm-password"
-                  required
-                />
-              </div>
+        <!-- Newsletter Join -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Приєднуйтесь до наших новин зараз</h6>
+            <p>
+              Отримуйте електронні повідомлення поштою про наші спеціальні
+              пропозиції.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Введіть свою пошту" />
+              <button type="submit" class="site-btn">Підписатися</button>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Закрыть
-            </button>
-            <button type="button" class="btn btn-primary">
-              Сохранить изменения
-            </button>
+            <div class="footer__widget__social">
+              <a href="https://www.facebook.com/dcmaterik"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/dcmaterik/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCwuhqp6Ze7uydK2QcJjQ9hQ"><i class="fa fa-youtube"></i></a>
+            </div>
           </div>
         </div>
-       </div>
-      </div>
       </div>
 
-     </div>
-
-     <footer class="footer spad">
-      <!-- Вставьте здесь код подвала из index.html -->
-      <div class="container">
-        <div class="row">
-          <!-- Logo & About -->
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="footer__about">
-              <div class="footer__about__logo">
-                <a href="./index.html"><img src="img/logo.png" alt="" /></a>
-              </div>
-              <ul>
-                <li>Адреса: 1317 Example Place 28204 NC</li>
-                <li>Телефон: 704-768-7449</li>
-                <li>Email: example@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Useful links -->
-          <div class="col-lg-4 offset-lg-1 col-md-6 col-sm-6">
-            <div class="footer__widget">
-              <h6>Корисні посилання</h6>
-              <ul>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Про наш магазин</a></li>
-                <li><a href="#">Безпечні покупки</a></li>
-                <li><a href="#">Інформація про доставку</a></li>
-                <li><a href="#">Політика конфіденційності</a></li>
-                <li><a href="#">Наша мапа сайту</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Хто ми</a></li>
-                <li><a href="#">Наші Послуги</a></li>
-                <li><a href="#">Проекти</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="#">Інновації</a></li>
-                <li><a href="#">Відгуки</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Newsletter Join -->
-          <div class="col-lg-4 col-md-12">
-            <div class="footer__widget">
-              <h6>Приєднуйтесь до наших новин зараз</h6>
+      <!-- Copyright & Cards -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text">
               <p>
-                Отримуйте електронні повідомлення поштою про наші спеціальні
-                пропозиції.
+                Авторські права &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Всі права захищені | <b>TK</b>
               </p>
-              <form action="#">
-                <input type="text" placeholder="Введіть свою пошту" />
-                <button type="submit" class="site-btn">Підписатися</button>
-              </form>
-              <div class="footer__widget__social">
-                <a href="https://www.facebook.com/dcmaterik"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/dcmaterik/"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/channel/UCwuhqp6Ze7uydK2QcJjQ9hQ"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Copyright & Cards -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer__copyright">
-              <div class="footer__copyright__text">
-                <p>
-                  Авторські права &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  Всі права захищені | <b>TK</b>
-                </p>
-              </div>
-              <div class="footer__copyright__payment">
-                <img src="img/payment-item.png" alt="" />
-              </div>
+            <div class="footer__copyright__payment">
+              <img src="img/payment-item.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-     </footer>
+    </div>
+  </footer>
 
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-      <script>
-        $('#changePasswordModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget); // Кнопка, которая вызвала модальное окно
-            var recipient = button.data('whatever'); // Извлечение информации из атрибутов data-
-            var modal = $(this);
-            modal.find('.modal-title').text('Новое сообщение к ' + recipient);
-            modal.find('.modal-body input').val(recipient);
-        });
-      </script>
-  </body>
+  <script>
+    $('#changePasswordModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Кнопка, которая вызвала модальное окно
+      var recipient = button.data('whatever'); // Извлечение информации из атрибутов data-
+      var modal = $(this);
+      modal.find('.modal-title').text('Новое сообщение к ' + recipient);
+      modal.find('.modal-body input').val(recipient);
+    });
+  </script>
+</body>
+
 </html>
