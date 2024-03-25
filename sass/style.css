@@ -2295,6 +2295,18 @@ ol {
   content: '';
 }
 
+/* style number phone */
+a[href^="tel:"] {
+  color: #000; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold; /* Жирное начертание */
+}
+
+a[href^="tel:"]:hover {
+  color: #833030; /* Цвет текста при наведении */
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
 /* Blog Sidebar */
 .blog__sidebar {
   padding-top: 50px;
