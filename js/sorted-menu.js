@@ -4,7 +4,7 @@
 // console.log(replaceNode);
 // sorted.appendChild(replaceNode);
 
-document.querySelector('#sort-prisehi').onclick = mySort;
+document.querySelector('#sort-hi').onclick = mySort;
 
 function mySort() {
     let sorted = document.querySelector('#sorted');

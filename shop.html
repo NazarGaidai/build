@@ -398,17 +398,10 @@
                             <div class="col-lg-4 col-md-5">
                                 <div class="filter__sort">
                                     <span>Сортувати за</span>
-                                    <select>
-                                        <option id="#">Загальний</option>
-                                        <option id="sort-prisehi">ціна макс</option>
-                                        <option id="sort-priselow">ціна лоу</option>
-                                        <option id="#">Загальний</option>
-                                        <button id="sort-prisehi">ціна макс</button>
-                                        <button id="sort-priselow">ціна лоу</button>
-                                    </select>
+                                  
                                 </div>
-                                <button id="sort-prisehi">ціна макс</button>
-                                        <button id="sort-priselow">ціна лоу</button>
+                                <button id="sort-hi" onclick="mysort">ціна макс</button>
+                                        <button id="sort-low">ціна лоу</button>
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <div class="filter__found">
@@ -425,7 +418,7 @@
                     </div>
                     <article class="content">
                      <div class="row" id="sorted">
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="700">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"700">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -448,7 +441,7 @@
                                </div>
                             </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="600">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"450">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -457,7 +450,7 @@
                                         <li><a href="#"><i class="fa fa-shopping-cart"
                                             data-sb-id-or-vendor-code="050"
                                             data-sb-product-name="Цемент-500"
-                                            data-sb-product-price="600"
+                                            data-sb-product-price="450"
                                             data-sb-product-quantity="1"
                                             data-sb-product-img="img/cement.png"></i></a></li>
                                     </ul>
@@ -465,13 +458,13 @@
                                 <div class="product__item__text">
                                     <h6><a href="#">Цемент-500</a></h6>
                                     
-                                    <h5>600₴</h5>
+                                    <h5>450₴</h5>
                                     <div class="product__quantity"></div>
                                   </div>
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="500">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"500">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -494,7 +487,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="400">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"400">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -517,30 +510,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="300">
-                            <section><div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/cement.png">
-                                    <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                        
-                                        <li><a href="#"><i class="fa fa-shopping-cart"
-                                            data-sb-id-or-vendor-code="050"
-                                            data-sb-product-name="Цемент-500"
-                                            data-sb-product-price="300"
-                                            data-sb-product-quantity="1"
-                                            data-sb-product-img="img/cement.png"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
-                                    <h6><a href="#">Цемент-500</a></h6>
-                                    
-                                    <h5>300₴</h5>
-                                    <div class="product__quantity"></div>
-                                  </div>
-                               </div>
-                        </section>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="200">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"200">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -563,7 +533,30 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="100">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"300">
+                            <section><div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/cement.png">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        
+                                        <li><a href="#"><i class="fa fa-shopping-cart"
+                                            data-sb-id-or-vendor-code="050"
+                                            data-sb-product-name="Цемент-500"
+                                            data-sb-product-price="300"
+                                            data-sb-product-quantity="1"
+                                            data-sb-product-img="img/cement.png"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Цемент-500</a></h6>
+                                    
+                                    <h5>300₴</h5>
+                                    <div class="product__quantity"></div>
+                                  </div>
+                               </div>
+                        </section>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"100">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -586,7 +579,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="50">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"50">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -609,7 +602,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="25">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"25">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -632,7 +625,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="12.50">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"12.50">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -655,7 +648,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="6.25">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"6.25">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -678,7 +671,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="3.125">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"3.125">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
@@ -701,7 +694,7 @@
                                </div>
                         </section>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:="1000">
+                        <div class="col-lg-4 col-md-6 col-sm-6" data-sort:"1000">
                             <section><div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/cement.png">
                                     <ul class="product__item__pic__hover">
