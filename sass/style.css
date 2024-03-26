@@ -1442,6 +1442,11 @@ ol {
 .filter__found h6 {
   font-size: 16px;
   color: #b2b2b2;
+  font-weight: 700;
+}
+
+#productCount {
+  font-weight: bold;
 }
 
 .filter__found h6 span {

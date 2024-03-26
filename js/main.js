@@ -192,4 +192,14 @@
         $button.parent().find('input').val(newVal);
     });
 
+    // Этот код должен быть вставлен в ваш файл JavaScript, который подключен к вашему HTML-документу
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем количество товаров на странице
+    var productCount = document.querySelectorAll('.product__item').length;
+
+    // Устанавливаем полученное количество товаров в соответствующий span
+    document.getElementById('productCount').textContent = productCount;
+});
+
+
 })(jQuery);
